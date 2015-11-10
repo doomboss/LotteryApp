@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html> <!--use the name defined from module in app.js, dont use the name after var -->
+<head>
+    <link rel="stylesheet" type="text/css" src="css/main.css" />
+    <style>
+        html, body{
+        background-image: url("http://static.vecteezy.com/system/resources/previews/000/091/044/original/lottery-balls-glossy-vector-editable.jpg");
+        background-color: #000000;
+        background-position: center;
+        background-position-y:top;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        min-width:1280px;
+        position: center;
+        }
+    </style>
+    <title>Onyi Cho's Dream Home</title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" ></script>
+</head>
+<body ng-app="LotteryApp">
+    <div class="container">
+        <div class="jumbotron header" style="background:transparent !important">
+
+            <h2>Lottery Viewing Page for Multiple Lottery!</h2>
+            <p>Select One</p>
+
+        </div>
+        <ng-view></ng-view>
+        
+
+    </div>
+
+    <!--LotteryApp-->
+    <script src="js/app.js"></script>
+    <!--Controller-->
+    <script src="js/controllers/MegaMillionController.js"></script>
+    <script src="js/controllers/PowerballController.js"></script>
+    <!--Service-->
+    <script src="js/service.js"></script>
+    <!--Directive-->
+    <script src=""></script>
+
+</body>
+</html>

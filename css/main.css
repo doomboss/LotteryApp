@@ -1,0 +1,23 @@
+﻿header {
+    background-color : #e52323;
+}
+header h2{
+    text-align: center;
+    align-content:center;
+ }
+header p{
+    text-align: center;
+    border-color: #00ff21;
+ }
+
+lottery_choice {
+    margin-left:50%; 
+    margin-right:50%;
+    position: center;
+}
+
+lottery_button{
+    padding-left:20%;
+    padding-right:20%;
+    margin: 20% 20% 20% 20%;
+}

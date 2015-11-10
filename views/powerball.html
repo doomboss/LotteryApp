@@ -1,0 +1,24 @@
+<div class="main">
+    <div class="container">
+        <div class="row" >
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Winning Numbers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in powerball_numbers">
+                        <td>{{item.draw_date | date}}</td>
+                        <td>{{item.winning_numbers}}</td>
+                    </tr>
+                </tbody>
+            </table>
+           <!-- <div class="col-md-3" ng-repeat="item in powerball_numbers">
+                <h3> Date: {{item.draw_date | date}} </h3>
+                <p> Winning Numbers: {{item.winning_numbers}} </p>
+            </div>-->
+        </div>
+    </div>
+</div>
